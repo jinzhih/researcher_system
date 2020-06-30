@@ -1,0 +1,236 @@
+﻿<Window x:Class="RAP.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RAP.View"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized" Loaded="Window_Loaded">
+    <Viewbox Stretch="Fill">
+    <Grid Width="1250" Height="600">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130*"/>
+                <ColumnDefinition Width="270*"/>
+                <ColumnDefinition Width="200*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+        <DockPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="RAP"></MenuItem>
+            </Menu>
+        </DockPanel>
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="tbName" Grid.Row="0" Grid.Column="0" Height="25" Margin="5,0,0,5"/>
+            <Button x:Name="btnSearch" Grid.Row="0" Grid.Column="1" Height="25"  Margin="5,0,5,5" Click="BtnSearch_Click">Search</Button>
+                <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                    <ComboBox x:Name="DBLevel"  Height="25" Margin="5,5,5,5" SelectionChanged="DBLevel_SelectionChanged" Loaded="DBLevel_Loaded">
+                    </ComboBox>
+                    <ListBox x:Name="lbResearcher" Height="497" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,5,5,5" SelectionChanged="LbResearcher_SelectionChanged" FontSize="14"/>
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="spResearcherDetails" Grid.Row="1" Grid.Column="1" Margin="5,0,5,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                </Grid>
+                <Image Source="{Binding Photo}" Grid.Row="0" Grid.Column="1" Margin="20,20,80,20"  Width="80" Height="80" HorizontalAlignment="Right" VerticalAlignment="Top"></Image>
+                <StackPanel  Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="10">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Name:"></Label>
+                        <Label Content="{Binding FullName}"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Title:"></Label>
+                        <Label Content="{Binding Title}"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Unit:"></Label>
+                        <Label Content="{Binding Unit}"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Campus:"></Label>
+                        <Label Content="{Binding Campus}"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Email:"></Label>
+                        <Label Content="{Binding Email}"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Current job:"></Label>
+                        <Label Content="{Binding CurrentJob}"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Commenced with institution:"></Label>
+                        <Label Content="{Binding UtasStart}"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Commenced current position:"></Label>
+                        <Label Content="{Binding CurrentStart}"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Name="lablePrePosition" Content="Previous positions:" Visibility="Collapsed"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ListBox x:Name="lbPrePosition" Width="500" Height="53" Visibility="Collapsed" Margin="5,5,5,5"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Tenure:"></Label>
+                        <Label Content="{Binding Tenure}"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Publications:"></Label>
+                        <Label Content="{Binding PubCount}" ></Label>
+                        <Button Height="20" Margin="20,0,0,0" Click="Button_Click" >Cumulative Count</Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ListBox x:Name="lbCumCount" Width="500" Height="38" Margin="5,5,5,5" Visibility="Collapsed"></ListBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="250"/>
+                                <ColumnDefinition Width="250"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Horizontal" Grid.Column="0">
+                                <Label Content="3-year average:" ></Label>
+                                <Label Content="{Binding TYAve}" ></Label>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                                <Label Content="Performance:" ></Label>
+                                <Label Content="{Binding Performance}" ></Label>
+                            </StackPanel>
+                        </Grid>
+            </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Supervisions:"></Label>
+                        <Label Content="{Binding SupervisionsCount}"></Label>
+                        <Button x:Name="btnShowSupName" Visibility="Collapsed" Height="20" Margin="20,0,0,0" Click="BtnShowSupName_Click">Show Names</Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ListBox x:Name="lbSupName" Width="500" Height="38" Margin="5,5,5,5" Visibility="Collapsed"></ListBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="250"/>
+                                <ColumnDefinition Width="250"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Horizontal" Grid.Column="0">
+                                <Label Content="Degree:"></Label>
+                                <Label Content="{Binding Degree}"></Label>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                                <Label Content="Supervisor:" ></Label>
+                                <Label Content="{Binding SupervisorName}"></Label>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        <Grid Grid.Row="1" Grid.Column="2">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+              </Grid.RowDefinitions>
+              <StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,0,5,5">
+                        <Label Content="From:" Margin="0,0,5,0"/>
+                        <ComboBox Name="cbStartYear" Width="52" VerticalContentAlignment="Center" >
+                            <ComboBoxItem Content="2019" />
+                            <ComboBoxItem Content="2018" />
+                            <ComboBoxItem Content="2017" />
+                            <ComboBoxItem Content="2016" />
+                            <ComboBoxItem Content="2015" />
+                            <ComboBoxItem Content="2014" />
+                            <ComboBoxItem Content="2013" />
+                            <ComboBoxItem Content="2012" />
+                            <ComboBoxItem Content="2011" />
+                            <ComboBoxItem Content="2010" />
+                            <ComboBoxItem Content="2009" />
+                            <ComboBoxItem Content="2008" />
+                            <ComboBoxItem Content="2007" />
+                            <ComboBoxItem Content="2006" />
+                            <ComboBoxItem Content="2005" />
+                        </ComboBox>
+                        <Label Content="To:" Margin="5,0,5,0" />
+                        <ComboBox Name="cbEndYear" Width="52" VerticalContentAlignment="Center" >
+                            <ComboBoxItem Content="2019" />
+                            <ComboBoxItem Content="2018" />
+                            <ComboBoxItem Content="2017" />
+                            <ComboBoxItem Content="2016" />
+                            <ComboBoxItem Content="2015" />
+                            <ComboBoxItem Content="2014" />
+                            <ComboBoxItem Content="2013" />
+                            <ComboBoxItem Content="2012" />
+                            <ComboBoxItem Content="2011" />
+                            <ComboBoxItem Content="2010" />
+                            <ComboBoxItem Content="2009" />
+                            <ComboBoxItem Content="2008" />
+                            <ComboBoxItem Content="2007" />
+                            <ComboBoxItem Content="2006" />
+                            <ComboBoxItem Content="2005" />
+                        </ComboBox>
+                        <Button x:Name="btnPubSearch" Margin="13,0,0,0" Width="50" Click="BtnPubSearch_Click" >Search</Button>
+                        <Label Content="Sort" Margin="20,0,5,0" />
+                        <ComboBox Name="cbSort" Width="96" SelectionChanged="cbSort_SelectionChanged" Loaded="cbSort_Loaded">
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel>
+                        <ListView x:Name="lbPublication" Grid.Row="0" Height="220" Margin="5,5,5,5" SelectionChanged="LbPublication_SelectionChanged"/>
+                    </StackPanel>
+                </StackPanel>
+              <StackPanel x:Name="spPublicationDetails" Grid.Row="1" Margin="0,10,0,0">
+                  <StackPanel x:Name="d" Orientation="Horizontal" Height="auto">
+                        <Label Content="Title:"></Label>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Title}" Margin="5,5,5,5" Width="370" />
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <Label Content="DOI:"></Label>
+                    <Label Content="{Binding DOI}"></Label>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <Label Content="Authors:"></Label>
+                        <Label Content="{Binding Authors}"></Label>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <Label Content="Publication Year:"></Label>
+                    <Label Content="{Binding Year}"></Label>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <Label Content="Type:"></Label>
+                        <Label Content="{Binding OutputType}"></Label>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <Label Content="Cite As:"></Label>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding CiteAs}" Margin="5,5,5,5" Width="350" />
+                    </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <Label Content="Availability Date:"></Label>
+                    <Label Content="{Binding AvaDate}"></Label>
+                  </StackPanel>
+                  <StackPanel Orientation="Horizontal">
+                    <Label Content="Age:"></Label>
+                    <Label Content="{Binding Age}"></Label>
+                  </StackPanel>
+              </StackPanel>
+          </Grid>
+    </Grid>
+    </Viewbox>
+</Window>

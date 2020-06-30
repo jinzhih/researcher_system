@@ -1,0 +1,150 @@
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using RAP.Research;
+
+namespace RAP.Database
+{
+    abstract class Database
+    {
+
+        //These would not be hard coded in the source file normally, but read from the application's settings (and, ideally, with some amount of basic encryption applied)
+        private const string db = "kit206";
+        private const string user = "kit206";
+        private const string pass = "kit206";
+        private const string server = "alacritas.cis.utas.edu.au";
+
+        private static MySqlConnection conn = null;
+
+        //Part of step 2.3.3 in Week 9 tutorial. This method is a gift to you because .NET's approach to converting strings to enums is so horribly broken
+        public static T ParseEnum<T>(string value)
+        {
+            return (T)Enum.Parse(typeof(T), value);
+        }
+
+        /// <summary>
+        /// Creates and returns (but does not open) the connection to the database.
+        /// </summary>
+        private static MySqlConnection GetConnection()
+        {
+            if (conn == null)
+            {
+                //Note: This approach is not thread-safe
+                string connectionString = String.Format("Database={0};Data Source={1};User Id={2};Password={3}", db, server, user, pass);
+                conn = new MySqlConnection(connectionString);
+            }
+            return conn;
+        }
+
+        //For step 2.2 in Week 9 tutorial\
+        public static List<Researcher> FetchBasicresearcherDetails()
+        {
+            List<Researcher> researcherBasic = new List<Researcher>();
+
+            MySqlConnection conn = GetConnection();
+            MySqlDataReader rdr = null;
+
+            try
+            {
+                conn.Open();
+
+                MySqlCommand cmd = new MySqlCommand("select title, given_name, family_name, id, campus," +
+                    "email, photo from researcher", conn);
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    //Note that in your assignment you will need to inspect the *type* of the
+                    //employee/researcher before deciding which kind of concrete class to create.
+                    researcherBasic.Add(new Researcher {
+                        id = rdr.GetInt32(3),
+                        Title = rdr.GetString(0),
+                        GivenName = rdr.GetString(1),
+                        FamilyName = rdr.GetString(2),
+                        Campus = rdr.GetString(4),
+                        Email = rdr.GetString(5),
+                        Photo = rdr.GetString(6),
+                        //ParseEnum<Mode>(rdr.GetString(2))    !!Get Enum!!
+                        Full = rdr.GetString(0) + " " + rdr.GetString(1) + " " + rdr.GetString(2) + " " + rdr.GetString(3) + " " + rdr.GetString(4) + " " + rdr.GetString(5) + " " + rdr.GetString(5),
+                        Basic = rdr.GetString(0) + " " + rdr.GetString(1) + " " + rdr.GetString(2) });
+                        
+                }
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Error connecting to database: " + e);
+            }
+            finally
+            {
+                if (rdr != null)
+                {
+                    rdr.Close();
+                }
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+
+            return researcherBasic;
+        }
+
+        public static List<Researcher> LoadResearcherdetials(int id)
+        {
+            List<Researcher> work = new List<Researcher>();
+
+            MySqlConnection conn = GetConnection();
+            MySqlDataReader rdr = null;
+
+            try
+            {
+                conn.Open();
+
+                MySqlCommand cmd = new MySqlCommand("select title, given_name, family_name,campus,email,photo " +
+                                                    "from researcher as res " +
+                                                    "where res.id==?id", conn);
+
+                cmd.Parameters.AddWithValue("id", id);
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    work.Add(new Researcher
+                    {
+                        Title = rdr.GetString(0),
+                        GivenName = rdr.GetString(1),
+                        FamilyName = rdr.GetString(2),
+                        Campus = rdr.GetString(3),
+                        Email = rdr.GetString(4),
+                        Photo = rdr.GetString(5),
+                       
+                    });
+                }
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("Error connecting to database: " + e);
+            }
+            finally
+            {
+                if (rdr != null)
+                {
+                    rdr.Close();
+                }
+                if (conn != null)
+                {
+                    conn.Close();
+                }
+            }
+
+            return work;
+        }
+
+
+
+
+    }
+}

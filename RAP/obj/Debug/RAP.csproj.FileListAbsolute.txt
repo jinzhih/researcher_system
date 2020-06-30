@@ -1,0 +1,121 @@
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\View\MainWindow.g.cs
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP_MarkupCompile.cache
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP_MarkupCompile.lref
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\RAP.exe.config
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\RAP.exe
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\RAP.pdb
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\Google.Protobuf.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\Renci.SshNet.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\Google.Protobuf.xml
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\MySql.Data.xml
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\Renci.SshNet.xml
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\View\MainWindow.baml
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP.g.resources
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP.exe
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\RAP.pdb
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\RAP.csprojAssemblyReference.cache
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\View\MainWindow.g.cs
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\App.g.cs
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\RAP_MarkupCompile.cache
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\RAP_MarkupCompile.lref
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\RAP.exe
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\RAP.pdb
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\RAP.exe.config
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\RAP.exe
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\RAP.pdb
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\Google.Protobuf.dll
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\MySql.Data.dll
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\Renci.SshNet.dll
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\Google.Protobuf.xml
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\MySql.Data.xml
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\bin\Debug\Renci.SshNet.xml
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\View\MainWindow.baml
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\RAP.g.resources
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\RAP.Properties.Resources.resources
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\RAP.csproj.GenerateResource.cache
+C:\Users\jinzh\Desktop\506\trunk\RAP\RAP\obj\Debug\RAP.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\EPPlus.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\EPPlus.xml
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\View\CumulativeCount.g.cs
+C:\Users\Administrator\Desktop\Assignment2_506\RAP\KIT506_Hbt_W1200_3\trunk\RAP\RAP\obj\Debug\View\CumulativeCount.baml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\RAP.exe.config
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\RAP.exe
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\RAP.pdb
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\EPPlus.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\Google.Protobuf.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\Renci.SshNet.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\EPPlus.xml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\Google.Protobuf.xml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\MySql.Data.xml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\bin\Debug\Renci.SshNet.xml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\View\CumulativeCount.g.cs
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\View\MainWindow.g.cs
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP_MarkupCompile.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP_MarkupCompile.lref
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\View\CumulativeCount.baml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\View\MainWindow.baml
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP.g.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP.Properties.Resources.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP.csproj.CopyComplete
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP.exe
+C:\Users\Administrator\Desktop\新建文件夹 (2)\RAP\RAP\obj\Debug\RAP.pdb
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\RAP.exe.config
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\RAP.exe
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\RAP.pdb
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\EPPlus.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\Google.Protobuf.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\Renci.SshNet.dll
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\EPPlus.xml
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\Google.Protobuf.xml
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\MySql.Data.xml
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\bin\Debug\Renci.SshNet.xml
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\View\CumulativeCount.g.cs
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\View\MainWindow.g.cs
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP_MarkupCompile.cache
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP_MarkupCompile.lref
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\View\CumulativeCount.baml
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\View\MainWindow.baml
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP.g.resources
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP.Properties.Resources.resources
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP.csproj.CopyComplete
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP.exe
+C:\Users\Administrator\Desktop\506_A2_final\RAP\RAP\obj\Debug\RAP.pdb

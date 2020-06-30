@@ -1,0 +1,61 @@
+﻿<Window x:Class="RAP.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RAP.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="210"/>
+            <ColumnDefinition Width="180"/>
+        </Grid.ColumnDefinitions>
+        <ListBox DisplayMemberPath="Basic" x:Name="lbResearcher"  Grid.Column="0" Margin="10,59,0,10" SelectionChanged="LbResearcher_SelectionChanged"/>
+        <ComboBox x:Name="dropbox" Margin="10,35,0,264">
+            <ComboBoxItem>
+                Student
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Level A
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Level B
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Level C
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Level D
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Level E
+            </ComboBoxItem>
+        </ComboBox>
+        <TextBox Margin="10,10,52,289"/>
+        <Button x:Name="search" Grid.Column="0" Margin="107,10,0,289">Search</Button>
+        <ListBox  x:Name="lbResearcherDetails" Grid.Column="1" Margin="10">
+            <ListBoxItem x:Name="LBIid" />
+            <ListBoxItem x:Name="LBIFN" />
+            <ListBoxItem x:Name="LBILN" />
+            <ListBoxItem x:Name="LBItitle" />
+            <ListBoxItem x:Name="LBIschool"/>
+            <ListBoxItem x:Name="LBIcampus" />
+            <ListBoxItem x:Name="LBIemail" />
+            <ListBoxItem x:Name="LBIphoto" />
+
+        </ListBox>
+        <!-- <Button x:Name="publication" Grid.Column="1" Margin="45,155,44,148"/> -->
+        <StackPanel x:Name="c" Orientation="Vertical" Grid.Column="2">
+            <StackPanel x:Name="d" Orientation="Horizontal" Height="156">
+                <Label Content="lable1" Width="87"></Label>
+                <Label Content="lable2" Width="86"></Label>
+            </StackPanel>
+            <StackPanel x:Name="e" Orientation="Horizontal" Height="162">
+                <Label Content="lable3" Width="87"/>
+                <Label Content="lable4" Width="86"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

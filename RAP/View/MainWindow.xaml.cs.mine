@@ -1,0 +1,121 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using RAP.Research;
+using RAP.Control;
+
+namespace RAP.View
+{
+    /// <summary>
+    /// MainWindow.xaml 
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        private Controller controller = new Controller();
+
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            
+         //   controller = (Controller)(Application.Current.FindResource(STAFF_LIST_KEY) as ObjectDataProvider).ObjectInstance;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            List<Researcher> listResearcher = controller.ResearcherAll;
+
+            //The use of a delegate here is not necessa ry, but a remnant of the Week 7 tutorial
+            //  doSomething = mycon.Display;
+
+            lbResearcher.ItemsSource = listResearcher; 
+        }
+
+        private void LbResearcher_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //get selected researcher object
+            Researcher researcherSel = (Researcher)lbResearcher.SelectedItem;
+            if ( researcherSel == null)
+            {
+                return;
+             }
+            Controller fullconn = new Controller();
+            List<Researcher> researcherFull = fullconn.ResearcherAll;
+            List<Researcher> selRes = new List<Researcher>();
+            foreach (Researcher i in researcherFull)
+            {
+                if (i.Id == researcherSel.Id)
+                {
+                    Researcher researchFull = new Researcher();
+                    researchFull.Id = i.Id;
+                    researchFull.GivenName = i.GivenName;
+                    researchFull.FamilyName = i.FamilyName;
+                    researchFull.FullName = i.FullName;
+                    //LBIid.Content = i.Id;
+                    //LBIFN.Content = i.GivenName;
+                    //LBILN.Content = i.FamilyName;
+                    //LBIemail.Content = i.Email;
+                    //LBIcampus.Content = i.Campus;
+                    //LBIschool.Content = i.School;
+                    //LBItitle.Content = i.Title;
+                    selRes.Add(researchFull);
+                }
+            }
+            spResearcherDetails.DataContext = selRes;
+
+        }
+
+            // lbResearcherDetails.ItemsSource = selRes;
+
+
+
+
+        
+
+        private void DBLevel_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+          //  spResearcherDetails.DataContext = null;
+            ComboBox cb = (ComboBox)sender;
+            //Get selected value from ComboBox
+            EmploymentLevel level = (EmploymentLevel)Enum.Parse(typeof(EmploymentLevel), cb.SelectedItem.ToString(), false);
+            //Call LevelFilter function
+            controller.LevelFilter(level);
+            lbResearcher.ItemsSource = controller.GetViewableList();
+
+        }
+
+        private void DBLevel_Loaded(object sender, RoutedEventArgs e)
+        {
+            DBLevel.ItemsSource = System.Enum.GetNames(typeof(EmploymentLevel));
+        }
+
+        private void BtnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            // Get input text from TextBox
+            string Input = tbName.Text;
+            // Call NameFilter function
+            if (Input == "")
+            {
+                lbResearcher.ItemsSource = null;
+            }
+            else
+            {
+                controller.NameFilter(Input);
+                lbResearcher.ItemsSource = controller.GetViewableList();
+            }
+        }
+    }
+}
